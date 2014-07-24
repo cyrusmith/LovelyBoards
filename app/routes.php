@@ -18,3 +18,6 @@ Route::get('/free', 'HomeController@showWelcome');
 
 Route::post('/discount', 'HomeController@discount');
 Route::get('/discount', 'HomeController@showWelcome');
+
+Route::post('/anketa', 'HomeController@anketa');
+Route::get('/anketa', 'HomeController@showWelcome');

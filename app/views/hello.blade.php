@@ -353,7 +353,7 @@
 <div class="container footer">
     <div class="row">
         <div class="col-xs-6 rekv">
-            ИП Сутягина Э.В.<br>
+            ИП Галимшина Э.В.<br>
             ОГРНИП 3486536586234
         </div>
         <div class="col-xs-6 copy">

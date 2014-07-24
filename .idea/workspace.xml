@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6fee540-caf9-4302-adb9-f82f6c18ce98" name="Default" comment="" />
+    <list default="true" id="e6fee540-caf9-4302-adb9-f82f6c18ce98" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Workspace\OpenServer\domains\magikboard\app\views\hello.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/anketa.blade.php" afterPath="$PROJECT_DIR$/app/views/anketa.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/hello.blade.php" afterPath="$PROJECT_DIR$/app/views/hello.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="magikboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406030968560" ignored="false" />
@@ -10,12 +18,14 @@
     <file path="/styles.less" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406199053959" ignored="false" />
     <file path="/variables.less" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406194790779" ignored="false" />
     <file path="/main.js" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406200314602" ignored="false" />
-    <file path="/HomeController.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406199801255" ignored="false" />
+    <file path="/HomeController.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406204607545" ignored="false" />
     <file path="/routes.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406191500524" ignored="false" />
     <file path="/hello.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406195102028" ignored="false" />
     <file path="/app.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406190115396" ignored="false" />
-    <file path="/hello.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406200233016" ignored="false" />
-    <file path="/anketa.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406197280796" ignored="false" />
+    <file path="/hello.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406204852957" ignored="false" />
+    <file path="/anketa.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406203083383" ignored="false" />
+    <file path="/Dummy.txt" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406203819776" ignored="false" />
+    <file path="/adminnotify.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406204232152" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +48,34 @@
       <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-8.45098">
+            <state line="67" column="16" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-4.857143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="adminnotify.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/emails/adminnotify.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="21" selection-start="515" selection-end="515" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/hello.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="283" column="39" selection-start="10399" selection-end="10411" vertical-scroll-proportion="-12.372549">
+            <state line="355" column="24" selection-start="12805" selection-end="12805" vertical-scroll-proportion="0.27915195">
               <folding />
             </state>
           </provider>
@@ -56,7 +84,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="583" selection-end="591" vertical-scroll-proportion="-5.8846154">
+            <state line="21" column="45" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,25 +93,16 @@
       <file leaf-file-name="anketa.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="59" selection-start="4052" selection-end="4057" vertical-scroll-proportion="-5.372549">
+            <state line="126" column="51" selection-start="6065" selection-end="6065" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/bootstrap-3.2.0/less/variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="485" column="41" selection-start="16081" selection-end="16081" vertical-scroll-proportion="-7.86">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="387" column="57" selection-start="11804" selection-end="11804" vertical-scroll-proportion="0.8636884">
+            <state line="359" column="0" selection-start="10808" selection-end="10808" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +111,7 @@
       <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-3.88">
+            <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,12 +124,17 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scss/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/bootstrap-3.2.0/less/variables.less" />
         <option value="$PROJECT_DIR$/styles.less" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -118,12 +142,15 @@
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/views/hello.php" />
         <option value="$PROJECT_DIR$/public/bootstrap-3.2.0/less/variables.less" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/public/styles.less" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/views/anketa.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/hello.blade.php" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/anketa.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/emails/adminnitify.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/views/emails/adminnotify.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/views/hello.blade.php" />
       </list>
     </option>
   </component>
@@ -160,6 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,56 +203,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-3.2.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,6 +252,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magikboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magikboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -296,9 +296,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magikboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magikboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,7 +358,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.78801334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430096" sideWeight="0.78801334" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -419,58 +436,83 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/compiled.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10729" column="0" selection-start="363173" selection-end="363173" vertical-scroll-proportion="0.8776978">
-          <folding>
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1406187123805" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="10729" column="0" selection-start="363173" selection-end="363173" vertical-scroll-proportion="0.8776978" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="-11.115385">
-          <folding />
-        </state>
+        <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="-11.115385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="10" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.44155845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/bootstrap-3.2.0/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="485" column="41" selection-start="16081" selection-end="16081" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="3" selection-start="695" selection-end="695" vertical-scroll-proportion="0.46735394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="0" selection-start="10808" selection-end="10808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="51" selection-start="6065" selection-end="6065" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="515" selection-end="515" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/emails/adminnotify.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
@@ -482,65 +524,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="10" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.44155845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bootstrap-3.2.0/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="485" column="41" selection-start="16081" selection-end="16081" vertical-scroll-proportion="-7.86">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="583" selection-end="591" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="695" selection-end="695" vertical-scroll-proportion="0.46735394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-8.45098">
+        <state line="67" column="16" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-4.857143">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/hello.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="39" selection-start="10399" selection-end="10411" vertical-scroll-proportion="-12.372549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-3.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="59" selection-start="4052" selection-end="4057" vertical-scroll-proportion="-5.372549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="57" selection-start="11804" selection-end="11804" vertical-scroll-proportion="0.8636884">
+        <state line="355" column="24" selection-start="12805" selection-end="12805" vertical-scroll-proportion="0.27915195">
           <folding />
         </state>
       </provider>

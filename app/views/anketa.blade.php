@@ -1,20 +1,24 @@
 <div class="container line anketa" id="{{{$id}}}">
-    <div class="row horizontalpages">
-        <div class="col-xs-6 col-xs-offset-3">
-            <h3>Укажите данные вашего малыша</h3>
 
-            <form role="form">
+    <form role="form" action="anketa" method="post">
+
+        <div class="row horizontalpages">
+            <div class="col-xs-6 col-xs-offset-3">
+                <h3>Укажите данные вашего малыша</h3>
+
+
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="kidname">Имя</label>
-                            <input type="text" class="form-control" id="kidname">
+                            <input type="text" name="name" class="form-control" id="kidname">
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="date">Дата рождения</label>
-                            <input type="date" class="form-control" id="date" placeholder="23 мая 2014">
+                            <input type="date" name="birthdate" class="form-control" id="date"
+                                   placeholder="23 мая 2014">
                         </div>
                     </div>
                 </div>
@@ -22,13 +26,13 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="height">Рост, см</label>
-                            <input type="number" class="form-control" id="height">
+                            <input type="number" name="height" class="form-control" id="height">
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="weight">Вес, кг</label>
-                            <input type="text" class="form-control" id="weight" placeholder="10,3">
+                            <input type="text" name="weight" class="form-control" id="weight" placeholder="10,3">
                         </div>
                     </div>
                 </div>
@@ -37,7 +41,7 @@
                         <label class="control-label" for="toy">Любимая игрушка:</label>
                     </div>
                     <div class="col-xs-8">
-                        <input type="text" class="form-control" id="toy" placeholder="">
+                        <input type="text" name="toy" class="form-control" id="toy" placeholder="">
                     </div>
                 </div>
                 <div class="row form-group fav">
@@ -45,7 +49,7 @@
                         <label class="control-label" for="food">Любимая еда:</label>
                     </div>
                     <div class="col-xs-8">
-                        <input type="text" class="form-control" id="food" placeholder="">
+                        <input type="text" name="food" class="form-control" id="food" placeholder="">
                     </div>
                 </div>
                 <div class="row form-group fav">
@@ -53,7 +57,7 @@
                         <label class="control-label" for="deed">Любимое занятие:</label>
                     </div>
                     <div class="col-xs-8">
-                        <input type="text" class="form-control" id="deed" placeholder="">
+                        <input type="text" name="deed" class="form-control" id="deed" placeholder="">
                     </div>
                 </div>
                 <div class="row form-group fav">
@@ -61,7 +65,7 @@
                         <label class="control-label" for="song">Любимая песенка:</label>
                     </div>
                     <div class="col-xs-8">
-                        <input type="text" class="form-control" id="song" placeholder="">
+                        <input type="text" name="song" class="form-control" id="song" placeholder="">
                     </div>
                 </div>
                 <div class="row form-group fav">
@@ -69,12 +73,12 @@
                         <label class="control-label" for="game">Любимая игра:</label>
                     </div>
                     <div class="col-xs-8">
-                        <input type="text" class="form-control" id="game" placeholder="">
+                        <input type="text" name="game" class="form-control" id="game" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="favmore">Еще я люблю:</label>
-                    <textarea class="form-control" rows="3" id="favmore"></textarea>
+                    <textarea class="form-control" name="more" rows="3" id="favmore"></textarea>
                 </div>
                 <div class="form-group">
                     <h4>Тариф</h4>
@@ -101,27 +105,28 @@
 
                 </div>
                 <button type="submit" class="anketa-page-next btn btn-primary anketa-page-btn">Далее &rarr;</button>
-            </form>
-        </div>
 
-        <div class="col-xs-6 col-xs-offset-3">
-            <h4>Данные для связи с вами:</h4>
+            </div>
 
-            <form role="form">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label class="control-label" for="username">Имя:</label>
-                            <input type="text" class="form-control" id="username">
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label class="control-label" for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="">
-                        </div>
-                    </div>
+            <div class="col-xs-6 col-xs-offset-3">
+
+                <h4>Данные для связи с вами:</h4>
+
+                <div class="form-group">
+                    <label class="control-label" for="username">Имя<sup>*</sup>:</label>
+                    <input type="text" name="order_name" validator="notempty" class="form-control" id="username">
                 </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email<sup>*</sup>:</label>
+                    <input type="email" name="order_email" validator="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="phone">Телефон:</label>
+                    <input type="text" name="order_phone" class="form-control" id="phone"
+                           placeholder="71239876789">
+                </div>
+
                 <div class="row">
                     <div class="col-xs-6">
                         <button type="submit" class="anketa-page-back btn btn-link anketa-page-btn">&larr;Назад
@@ -132,8 +137,8 @@
                     </div>
                 </div>
 
-            </form>
+            </div>
         </div>
-    </div>
+    </form>
 
 </div>
