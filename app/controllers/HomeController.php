@@ -29,7 +29,7 @@ class HomeController extends BaseController
                 'email' => Input::get('email'),
                 'type' => 'Запрос бесплатного шаблона'
             ), function ($message) {
-                $message->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.");
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.");
             });
 
         } else {
@@ -62,7 +62,7 @@ class HomeController extends BaseController
                 'email' => "Имя: ".Input::get('name')." Email: ".Input::get('email'),
                 'type' => 'Запрос скидки'
             ), function ($message) {
-                $message->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос скидки.");
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос скидки.");
             });
 
         } else {
@@ -127,7 +127,7 @@ class HomeController extends BaseController
                 'email' => " Имя: ".Input::get('order_name')." Email: ".Input::get('order_email').  " Телефон: ".Input::get('order_phone'),
                 'type' => 'Заказ #' . $id
             ), function ($message) {
-                $message->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Заказ!");
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Заказ!");
             });
         } else {
             $status = 'fail';
