@@ -1,23 +1,33 @@
 <?php
 
-class HomeController extends BaseController {
+class HomeController extends BaseController
+{
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
+    public function showWelcome()
+    {
+        return View::make('hello');
+    }
 
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
+    public function formOne()
+    {
+
+        $validator = Validator::make(Input::all(), array(
+            'email' => 'email'
+        ));
+
+        $status = 'ok';
+        $message = 'Спасибо за обращение! В течение дня мы вышлем вам бесплатный шаблон.';
+
+        if (!$validator->fails()) {
+            DB::transaction(function () {
+                DB::insert('insert into signups (email, created) values (?, ?)', array(Input::get('email'), date("Y-m-d H:i:s")));
+            });
+        } else {
+            $status = 'fail';
+            $message = 'Похоже, вы указали неправильный email. Попробуйте еще раз или напишите на на info@lovelyboards.ru';
+
+        }
+        return Redirect::to('free')->with('status', $status)->with('message', $message);
+    }
 
 }
