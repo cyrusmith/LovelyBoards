@@ -1,0 +1,458 @@
+a {
+  text-decoration: underline;
+  color: #c70018;
+}
+p a.more {
+  float: right;
+}
+h1 {
+  color: #e03046;
+  text-shadow: 0 1px 1px #533;
+  white-space: nowrap;
+  font-size: 42px;
+}
+h4,
+h5 {
+  font-weight: bold;
+}
+.container {
+  min-width: 960px;
+}
+.container.line {
+  padding: 4em 0;
+}
+.header {
+  height: 6em;
+}
+.header .logo {
+  padding: 3em 0 0 2em;
+}
+.header .logo a {
+  font-family: Verdana, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #c70018;
+  text-decoration: none;
+}
+.header .menu {
+  padding: 3.4em 0 0 6em;
+}
+.header .menu li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1em;
+}
+.header address {
+  max-width: 16em;
+  padding-top: 3.5em;
+  line-height: 1.1em;
+}
+.header address .phone {
+  font-size: 2.5em;
+  color: #36150d;
+  float: right;
+  white-space: nowrap;
+}
+.header address .callback {
+  display: block;
+  text-align: right;
+}
+.descript {
+  height: 484px;
+  background: #941925 url(images/descr_bg.jpg) no-repeat 50% 50%;
+}
+.descript .slideshow {
+  margin-top: 4em;
+  margin-left: -1.5em;
+  border: 10px solid #FFF;
+  -webkit-box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.descript h2 {
+  padding-top: 1em;
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 0 1px 1px #533;
+  line-height: 1.5em;
+}
+.descript .getfree-title {
+  color: #FFF;
+  padding-top: 2em;
+  text-shadow: 0 1px 1px #533;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background: url(images/arr1.png) no-repeat 100% 30%;
+}
+.descript form {
+  width: 334px;
+  height: 116px;
+  background: url(images/form_bg.png) no-repeat 0 0;
+}
+.descript form label {
+  display: block;
+  color: #FFF;
+  text-shadow: 0 1px 1px #533;
+  padding-top: 1.2em;
+  margin-left: 28px;
+}
+.descript form input {
+  display: block;
+  width: 280px;
+  margin: 0.5em 0 0 28px;
+  border: 1px solid #ae6979;
+  padding: 0.2em 0;
+}
+.descript .submit {
+  padding-left: 3.5em;
+}
+.about h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e03046;
+  text-shadow: 0 1px 1px #000;
+}
+.testimonials h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #111;
+}
+.testimonials .scroll {
+  overflow-x: hidden;
+  width: 250px;
+  position: relative;
+}
+.testimonials .scroll .back,
+.testimonials .scroll .fwd {
+  position: absolute;
+  top: 30px;
+  width: 16px;
+  height: 58px;
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+}
+.testimonials .scroll .back:hover,
+.testimonials .scroll .fwd:hover {
+  text-decoration: none;
+}
+.testimonials .scroll .back {
+  background: url(images/back.gif) no-repeat 0 0;
+  left: 0;
+}
+.testimonials .scroll .fwd {
+  background: url(images/fwd.gif) no-repeat 0 0;
+  right: 0;
+}
+.testimonials .scroll ul.items {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.testimonials .scroll ul.items li {
+  list-style-type: none;
+}
+.testimonials .scroll ul.items li h4,
+.testimonials .scroll ul.items li p {
+  padding: 0 0.85em;
+}
+.howwework h2 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  font-weight: bold;
+  color: #e03046;
+}
+.howwework .step {
+  text-align: center;
+}
+.howwework .step p {
+  padding: .5em 0 0 4em;
+  text-align: left;
+  font-weight: bold;
+}
+.offer {
+  text-align: center;
+  height: 480px;
+  background: #cbedf9 url(images/offer-bg.jpg) repeat-x 50% 50%;
+}
+.offer h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #c70018;
+  text-shadow: 0 1px 1px #999;
+  margin-bottom: 0;
+}
+.offer h3 .icon {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background: url(images/icon-idea.png) no-repeat 0 50%;
+}
+.offer h3 .text {
+  display: inline-block;
+  height: 72px;
+  position: relative;
+  top: -1.8em;
+  transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.offer .ofrtxt {
+  text-align: center;
+  font-size: 3.45em;
+  font-style: italic;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #c70018;
+  text-shadow: 0 1px 1px #999;
+}
+.offer .cta {
+  margin-top: 2em;
+  text-align: left;
+  display: inline-block;
+  height: 90px;
+  background-color: #ff5071;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5071), to(#ce3043));
+  background: -webkit-linear-gradient(top, #ff5071, #ce3043);
+  background: -moz-linear-gradient(top, #ff5071, #ce3043);
+  background: -ms-linear-gradient(top, #ff5071, #ce3043);
+  background: -o-linear-gradient(top, #ff5071, #ce3043);
+  color: #FFF;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.offer .cta:hover {
+  background-color: #ff5f7d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f7d), to(#d23c4e));
+  background: -webkit-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -moz-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -ms-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -o-linear-gradient(top, #ff5f7d, #d23c4e);
+}
+.offer .cta .text {
+  float: left;
+  padding-left: 72px;
+  padding-right: 30px;
+  height: 90px;
+  background: url(images/icon-anketa-white.png) no-repeat 10px 50%;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.offer .cta .text .wr {
+  display: inline-block;
+  padding: 1em 0 .5em 2em;
+}
+.offer .cta .text .wr small {
+  font-weight: normal;
+  font-size: .65em;
+}
+.offer .cta .note {
+  float: left;
+  width: 6em;
+  position: relative;
+  padding: .85em .5em .5em .5em;
+}
+.offer .cta .note:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  top: 5px;
+  left: -0.4em;
+  background: #e87484;
+}
+.options {
+  padding: 4em 0;
+}
+.options .g2t {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  color: #c70018;
+  padding: 1em 0;
+}
+.options table {
+  width: 90%;
+  margin: 0 auto;
+}
+.options table td,
+.options table th {
+  width: 33%;
+  background: #f6fbff;
+}
+.options table .titles th div {
+  white-space: nowrap;
+}
+.options table .titles .opt1 div {
+  background: #c7eaf7;
+  height: 100px;
+  color: #FFF;
+  text-shadow: 0 1px 1px #003a4c;
+  font-size: 2em;
+  padding-top: 35px;
+  text-align: center;
+  line-height: 1em;
+}
+.options table .titles .opt2 div {
+  background: #25c1f1;
+  height: 120px;
+  color: #FFF;
+  text-shadow: 0 1px 1px #003a4c;
+  font-size: 3em;
+  padding-top: 15px;
+  line-height: 1em;
+  text-align: center;
+}
+.options table .titles .opt3 div {
+  background: #ed4a5e;
+  height: 100px;
+  text-shadow: 0 1px 1px #003a4c;
+  color: #FFF;
+  line-height: 1em;
+  font-size: 2.5em;
+  padding-top: 15px;
+  text-align: center;
+}
+.options table .descr td {
+  vertical-align: top;
+}
+.options table .descr td ul li {
+  list-style-type: circle;
+  list-style-position: inside;
+  color: #444466;
+  text-shadow: 0 1px 1px #000;
+  font-size: 1.2em;
+  padding: .2em 0 .3em;
+  padding-right: 2em;
+}
+.options table .descr td ul li.cta {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 2em;
+}
+.options table .descr td ul li.cta button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #ff5071;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5071), to(#ce3043));
+  background: -webkit-linear-gradient(top, #ff5071, #ce3043);
+  background: -moz-linear-gradient(top, #ff5071, #ce3043);
+  background: -ms-linear-gradient(top, #ff5071, #ce3043);
+  background: -o-linear-gradient(top, #ff5071, #ce3043);
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #FFF;
+  padding: .2em 1em;
+}
+.options table .descr td ul li.cta button:hover {
+  background-color: #ff5f7d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f7d), to(#d23c4e));
+  background: -webkit-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -moz-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -ms-linear-gradient(top, #ff5f7d, #d23c4e);
+  background: -o-linear-gradient(top, #ff5f7d, #d23c4e);
+}
+.options table .descr td.opt2 ul {
+  background: #FFF;
+  -webkit-box-shadow: 0 8px 20px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 8px 20px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px 3px rgba(0, 0, 0, 0.25);
+  padding: 1.5em 0;
+  float: left;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d6d6f4;
+  border-left: 1px solid #d6d6f4;
+  border-right: 1px solid #d6d6f4;
+}
+.options table .descr td.opt2 ul li {
+  padding-left: 2em;
+}
+.footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid #666;
+  font-size: 1.2em;
+  color: #666666;
+  font-weight: bold;
+}
+.footer .copy {
+  text-align: right;
+}
+#anketaPage2 {
+  display: none;
+}
+.is-popup {
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+.is-popup .is-popup-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em;
+  border: 3px solid #8c8c8c;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.25);
+  background: #FFF;
+}
+.is-popup .is-popup-wrapper .close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #666666;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  opacity: 1;
+  background: #FFF;
+}
+.is-popup .is-popup-wrapper .close:hover {
+  border-color: #808080;
+  color: #808080;
+  background-color: #f7f7f7;
+}
+.is-popup .is-popup-wrapper .is-popup-content {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: none;
+}
+.is-popup-modal {
+  background: #000;
+  opacity: 0.3;
+}
+.orgoffer {
+  padding: 1em 0;
+}
