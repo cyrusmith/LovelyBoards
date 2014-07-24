@@ -21,6 +21,10 @@
         var VALIDATORS = {
             'email': function (value) {
                 return /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)
+            },
+            'notempty': function (value) {
+                value = $.trim(value);
+                return !!value;
             }
         };
 
@@ -28,14 +32,14 @@
             var $form = $(this);
 
             $form.submit(function () {
-                var inputs = $form.find('input, textarea');
+                var inputs = $(this).find('input, textarea');
                 var hasErrors = false;
-                debugger;
+
+                $(this).find('.has-error').removeClass('has-error');
+
                 inputs.each(function () {
                     var $input = $(this),
                         validator = $input.attr('validator');
-
-                    $input.parent().removeClass('has-error');
 
                     if (!validator) {
                         return;
@@ -355,26 +359,28 @@
     }
 
     $(function () {
+
         $('.testimonials .scroll').interositeSlider();
         $('.menu li a').interositePopup();
         $('a.cta').interositeToggleAndScroll();
         $('.getdiscount').interositeToggleAndScroll();
+        $('.order-option').interositeToggleAndScroll();
         $('a.more').interositeReadMore(true);
 
 
         $('.horizontalpages').interositeHorizontalPagination('init');
 
-        $('#anketaPageNext').click(function (e) {
-            $('.horizontalpages').interositeHorizontalPagination('next');
+        $('.horizontalpages').find('.anketa-page-next').click(function (e) {
+            $(this).parents('.horizontalpages').interositeHorizontalPagination('next');
             return false;
         });
 
-        $('#anketaPageBack').click(function (e) {
-            $('.horizontalpages').interositeHorizontalPagination('prev');
+        $('.horizontalpages').find('.anketa-page-back').click(function (e) {
+            $(this).parents('.horizontalpages').interositeHorizontalPagination('prev');
             return false;
         });
 
-        $('#form1').interositeFormValidate();
+        $('form').interositeFormValidate();
 
     });
 

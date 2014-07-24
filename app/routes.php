@@ -15,3 +15,6 @@ Route::get('/', 'HomeController@showWelcome');
 
 Route::post('/free', 'HomeController@formOne');
 Route::get('/free', 'HomeController@showWelcome');
+
+Route::post('/discount', 'HomeController@discount');
+Route::get('/discount', 'HomeController@showWelcome');
