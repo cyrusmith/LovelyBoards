@@ -1,5 +1,59 @@
 (function ($) {
 
+    $.fn.interositeMessagePopup = function () {
+        return this.each(function () {
+            var $popup = $(this);
+            $popup.addClass('is-message-popup');
+            $popup.css({
+                position: 'absolute',
+                top: '-300px'
+            });
+            $popup.show();
+            $popup.animate({
+                top: '0px'
+            }, 1000);
+
+        });
+    }
+
+    $.fn.interositeFormValidate = function () {
+
+        var VALIDATORS = {
+            'email': function (value) {
+                return /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)
+            }
+        };
+
+        return this.each(function () {
+            var $form = $(this);
+
+            $form.submit(function () {
+                var inputs = $form.find('input, textarea');
+                var hasErrors = false;
+                debugger;
+                inputs.each(function () {
+                    var $input = $(this),
+                        validator = $input.attr('validator');
+
+                    $input.parent().removeClass('has-error');
+
+                    if (!validator) {
+                        return;
+                    }
+                    if (!VALIDATORS.hasOwnProperty(validator)) {
+                        return;
+                    }
+                    if (!VALIDATORS[validator]($input.val())) {
+                        hasErrors = true;
+                        $input.parent().addClass('has-error');
+                    }
+                });
+                return !hasErrors;
+            });
+
+        });
+    }
+
     $.fn.interositeSlider = function () {
         return this.each(function () {
             var $this = $(this);
@@ -319,6 +373,8 @@
             $('.horizontalpages').interositeHorizontalPagination('prev');
             return false;
         });
+
+        $('#form1').interositeFormValidate();
 
     });
 
