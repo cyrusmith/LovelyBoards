@@ -382,6 +382,12 @@
 
         $('form').interositeFormValidate();
 
+        $('.order-option').click(function() {
+            var val=$(this).attr('opt');
+
+            $('input[name="tarif"][value="' + val + '"]').prop('checked', true);
+        });
+
     });
 
 

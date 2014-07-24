@@ -7,13 +7,13 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="kidname">Имя</label>
+                            <label class="control-label" for="kidname">Имя</label>
                             <input type="text" class="form-control" id="kidname">
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="date">Дата рождения</label>
+                            <label class="control-label" for="date">Дата рождения</label>
                             <input type="date" class="form-control" id="date" placeholder="23 мая 2014">
                         </div>
                     </div>
@@ -21,20 +21,20 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="height">Рост, см</label>
+                            <label class="control-label" for="height">Рост, см</label>
                             <input type="number" class="form-control" id="height">
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="weight">Вес, кг</label>
+                            <label class="control-label" for="weight">Вес, кг</label>
                             <input type="text" class="form-control" id="weight" placeholder="10,3">
                         </div>
                     </div>
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
-                        <label for="toy">Любимая игрушка:</label>
+                        <label class="control-label" for="toy">Любимая игрушка:</label>
                     </div>
                     <div class="col-xs-8">
                         <input type="text" class="form-control" id="toy" placeholder="">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
-                        <label for="food">Любимая еда:</label>
+                        <label class="control-label" for="food">Любимая еда:</label>
                     </div>
                     <div class="col-xs-8">
                         <input type="text" class="form-control" id="food" placeholder="">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
-                        <label for="deed">Любимое занятие:</label>
+                        <label class="control-label" for="deed">Любимое занятие:</label>
                     </div>
                     <div class="col-xs-8">
                         <input type="text" class="form-control" id="deed" placeholder="">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
-                        <label for="song">Любимая песенка:</label>
+                        <label class="control-label" for="song">Любимая песенка:</label>
                     </div>
                     <div class="col-xs-8">
                         <input type="text" class="form-control" id="song" placeholder="">
@@ -66,34 +66,34 @@
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
-                        <label for="game">Любимая игра:</label>
+                        <label class="control-label" for="game">Любимая игра:</label>
                     </div>
                     <div class="col-xs-8">
                         <input type="text" class="form-control" id="game" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="favmore">Еще я люблю:</label>
+                    <label class="control-label" for="favmore">Еще я люблю:</label>
                     <textarea class="form-control" rows="3" id="favmore"></textarea>
                 </div>
                 <div class="form-group">
                     <h4>Тариф</h4>
 
                     <div class="radio">
-                        <label>
+                        <label class="control-label">
                             <input type="radio" name="tarif" id="optionsRadios1" value="tarif1" checked>
                             Принт-мини
                         </label>
                     </div>
 
                     <div class="radio">
-                        <label>
+                        <label class="control-label">
                             <input type="radio" name="tarif" id="optionsRadios2" value="tarif2">
                             &laquo;Принт-макси&raquo;
                         </label>
                     </div>
                     <div class="radio">
-                        <label>
+                        <label class="control-label">
                             <input type="radio" name="tarif" id="optionsRadios3" value="tarif3">
                             &laquo;Под ключ&raquo;
                         </label>
@@ -111,13 +111,13 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="username">Имя:</label>
+                            <label class="control-label" for="username">Имя:</label>
                             <input type="text" class="form-control" id="username">
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label class="control-label" for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="">
                         </div>
                     </div>

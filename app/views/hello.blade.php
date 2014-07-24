@@ -92,7 +92,7 @@
                     <div class="col-xs-6">
                         <form action="/free" role="form" method="post" id="form1">
                             <div class="form-group">
-                                <label for="email1">Ваш email</label>
+                                <label class="control-label" for="email1">Ваш email</label>
                                 <input name="email" id="email1" class="form-control" validator="email">
                             </div>
                             <div class="submit text-center">
@@ -253,7 +253,7 @@
                         Постер на основе <a href="/design">готового дизайна</a>
                     </li>
                     <li class="cta">
-                        <button class="order-option" rel="anketa0">Заказать</button>
+                        <button class="order-option" rel="anketa0" opt="tarif1">Заказать</button>
                     </li>
                 </ul>
 
@@ -267,7 +267,7 @@
                         Уникальный шаблон
                     </li>
                     <li class="cta">
-                        <button class="order-option" rel="anketa0">Заказать</button>
+                        <button class="order-option" rel="anketa0" opt="tarif2">Заказать</button>
                     </li>
                 </ul>
 
@@ -281,7 +281,7 @@
                         Оформление в раму
                     </li>
                     <li class="cta">
-                        <button class="order-option" rel="anketa0">Заказать</button>
+                        <button class="order-option" rel="anketa0" opt="tarif3">Заказать</button>
                     </li>
                 </ul>
 
@@ -329,15 +329,15 @@
             <form role="form" action="discount" method="post">
                 <div class="row">
                     <div class="form-group">
-                        <label for="username">Имя:</label>
+                        <label class="control-label" for="username">Имя:</label>
                         <input type="text" class="form-control" name="name" validator="notempty" id="username">
                     </div>
                     <div class="form-group">
-                        <label for="username">Организация:</label>
+                        <label class="control-label" for="username">Организация:</label>
                         <input type="text" class="form-control" name="organisation" id="username">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label class="control-label" for="email">Email:</label>
                         <input type="email" class="form-control" name="email" validator="email" id="email" placeholder="">
                     </div>
                 </div>

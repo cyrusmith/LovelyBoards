@@ -9,12 +9,12 @@
     <file path="/a.dummy" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1404798300788" ignored="false" />
     <file path="/styles.less" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406199053959" ignored="false" />
     <file path="/variables.less" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406194790779" ignored="false" />
-    <file path="/main.js" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406199214048" ignored="false" />
-    <file path="/HomeController.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406198065425" ignored="false" />
+    <file path="/main.js" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406200314602" ignored="false" />
+    <file path="/HomeController.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406199801255" ignored="false" />
     <file path="/routes.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406191500524" ignored="false" />
     <file path="/hello.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406195102028" ignored="false" />
     <file path="/app.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406190115396" ignored="false" />
-    <file path="/hello.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406197774329" ignored="false" />
+    <file path="/hello.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406200233016" ignored="false" />
     <file path="/anketa.blade.php" changelist="e6fee540-caf9-4302-adb9-f82f6c18ce98" time="1406197280796" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
       <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="933" selection-end="933" vertical-scroll-proportion="-14.923077">
+            <state line="34" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-8.45098">
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
       <file leaf-file-name="hello.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/hello.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="46" selection-start="11544" selection-end="11552" vertical-scroll-proportion="-6.117647">
+            <state line="283" column="39" selection-start="10399" selection-end="10411" vertical-scroll-proportion="-12.372549">
               <folding />
             </state>
           </provider>
@@ -65,7 +65,7 @@
       <file leaf-file-name="anketa.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="35" selection-start="71" selection-end="86" vertical-scroll-proportion="-0.33333334">
+            <state line="83" column="59" selection-start="4052" selection-end="4057" vertical-scroll-proportion="-5.372549">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="21" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.6426117">
+            <state line="387" column="57" selection-start="11804" selection-end="11804" vertical-scroll-proportion="0.8636884">
               <folding />
             </state>
           </provider>
@@ -92,7 +92,7 @@
       <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="29" selection-start="4659" selection-end="4659" vertical-scroll-proportion="-1.84">
+            <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-3.88">
               <folding />
             </state>
           </provider>
@@ -118,11 +118,11 @@
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/views/hello.php" />
         <option value="$PROJECT_DIR$/public/bootstrap-3.2.0/less/variables.less" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/public/styles.less" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/views/anketa.blade.php" />
         <option value="$PROJECT_DIR$/app/views/hello.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/public/styles.less" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
       </list>
     </option>
@@ -225,28 +225,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bootstrap-3.2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magikboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-3.2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,30 +496,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="35" selection-start="71" selection-end="86" vertical-scroll-proportion="-0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="49" selection-start="583" selection-end="591" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="933" selection-end="933" vertical-scroll-proportion="-14.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hello.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="46" selection-start="11544" selection-end="11552" vertical-scroll-proportion="-6.117647">
           <folding />
         </state>
       </provider>
@@ -553,16 +510,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-8.45098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hello.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="39" selection-start="10399" selection-end="10411" vertical-scroll-proportion="-12.372549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="29" selection-start="4659" selection-end="4659" vertical-scroll-proportion="-1.84">
+        <state line="163" column="26" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-3.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/anketa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="59" selection-start="4052" selection-end="4057" vertical-scroll-proportion="-5.372549">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="21" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.6426117">
+        <state line="387" column="57" selection-start="11804" selection-end="11804" vertical-scroll-proportion="0.8636884">
           <folding />
         </state>
       </provider>
