@@ -35,6 +35,12 @@
                             <input type="text" name="weight" class="form-control" id="weight" placeholder="10,3">
                         </div>
                     </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label" for="tooth">Сколько зубок?</label>
+                            <input type="number" name="tooth" class="form-control" id="tooth">
+                        </div>
+                    </div>					
                 </div>
                 <div class="row form-group fav">
                     <div class="col-xs-4">
@@ -86,7 +92,7 @@
                     <div class="radio">
                         <label class="control-label">
                             <input type="radio" name="tarif" id="optionsRadios1" value="tarif1" checked>
-                            Принт-мини
+                            &laquo;Принт-мини&raquo;
                         </label>
                     </div>
 

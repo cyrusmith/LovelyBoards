@@ -1,4 +1,5 @@
 @import "bootstrap-3.2.0/less/variables.less";
+@import "bootstrap-3.2.0/less/mixins/clearfix.less";
 
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
   text-shadow: @string;
@@ -154,32 +155,46 @@
 
 .shakeKeyframes() {
   0% {.translate(0, 0)}
-  12.5% {.translate(-6px, 0);}
-  37.5% {.translate(5px, 0);}
-  62.5% {.translate(-3px, 0);}
-  87.5% {.translate(2px, 0);}
+  12.5% {.translate(-6px, 0);
+  }
+  37.5% {.translate(5px, 0);
+  }
+  62.5% {.translate(-3px, 0);
+  }
+  87.5% {.translate(2px, 0);
+  }
   100% {.translate(0, 0)}
 }
 
 @-webkit-keyframes shake {
+
   .shakeKeyframes()
-}
+
+  }
 
 @-moz-keyframes shake {
-  .shakeKeyframes()
-}
 
-@-o-keyframes {
   .shakeKeyframes()
-}
+
+  }
+
+@-o-keyframes shake {
+
+  .shakeKeyframes()
+
+  }
 
 @-ms-keyframes shake {
+
   .shakeKeyframes()
-}
+
+  }
 
 @keyframes shake {
+
   .shakeKeyframes()
-}
+
+  }
 
 .has-error {
   .animation(shake, 400ms, 0, ease-in-out);
@@ -261,6 +276,13 @@ h4, h5 {
 
 .descript {
 
+  .descr_img {
+    img {
+      width: 100%;
+    }
+
+  }
+
   .slideshow {
     margin-top: 4em;
     margin-left: -1.5em;
@@ -326,48 +348,37 @@ h4, h5 {
 }
 
 .testimonials {
+
+  padding: 2em 0;
+
   h3 {
     font-size: 1.5em;
     font-weight: bold;
     color: #111;
   }
-  .scroll {
-    overflow-x: hidden;
-    width: 250px;
-    position: relative;
-    .back, .fwd {
-      position: absolute;
-      top: 30px;
-      width: 16px;
-      height: 58px;
-      cursor: pointer;
-      z-index: 1;
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    .back {
-      background: url(images/back.gif) no-repeat 0 0;
-      left: 0;
-    }
-    .fwd {
-      background: url(images/fwd.gif) no-repeat 0 0;
-      right: 0;
-    }
-    ul.items {
 
-      margin: 0;
-      padding: 0;
-      position: relative;
-      li {
-        list-style-type: none;
-        h4, p {
-          padding: 0 0.85em;
-        }
+  li {
+    list-style-type: none;
+    padding-bottom: 2em;
+
+
+      img {
+        float: left;
+        width: 150px;
+      }
+
+    p {
+      padding-left: 180px;
+      padding-top: 2em;
+      span {
+        font-weight: bold;
+        display: block;
       }
     }
+
+    .clearfix();
   }
+
 }
 
 .howwework {
@@ -619,6 +630,23 @@ h4, h5 {
   padding: 1em;
   .border-radius(10px);
   font-weight: bold;
+}
+
+#collage {
+
+/* define how much padding you want in between your images */
+  padding: 10px;
+
+}
+
+#collage .wrapper {
+
+/* ensures padding at the bottom of the image is correct */
+  vertical-align: bottom;
+
+/* hide the images until the plugin has run. the plugin will reveal the images*/
+  opacity: 0;
+
 }
 
 //Interosite plugins
