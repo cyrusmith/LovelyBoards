@@ -27,10 +27,10 @@ class HomeController extends BaseController
             });
 
             Mail::send('emails.adminnotify', array(
-                'email' => Input::get('email'),
+                'order_email' => Input::get('email'),
                 'type' => 'Запрос бесплатного шаблона'
             ), function ($message) {
-                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.");
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->cc(self::CC_EMAIL)->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.");
             });
 
         } else {
@@ -60,10 +60,11 @@ class HomeController extends BaseController
             });
 
             Mail::send('emails.adminnotify', array(
-                'email' => "Имя: " . Input::get('name') . " Email: " . Input::get('email'),
+                'order_email' => Input::get('email'),
+                'order_name' => Input::get('name')." (Организация: ".Input::get('organisation').")",
                 'type' => 'Запрос скидки'
             ), function ($message) {
-                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос скидки.");
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->cc(self::CC_EMAIL)->subject($_SERVER['HTTP_HOST'] . ": Запрос скидки.");
             });
 
         } else {
