@@ -4,6 +4,7 @@ class HomeController extends BaseController
 {
 
     const ADMINEMAIL = "alexander.sutyagin@gmail.com";
+    const CC_EMAIL = "shewolf.1984@gmail.com";
 
     public function showWelcome()
     {
@@ -59,7 +60,7 @@ class HomeController extends BaseController
             });
 
             Mail::send('emails.adminnotify', array(
-                'email' => "Имя: ".Input::get('name')." Email: ".Input::get('email'),
+                'email' => "Имя: " . Input::get('name') . " Email: " . Input::get('email'),
                 'type' => 'Запрос скидки'
             ), function ($message) {
                 $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Запрос скидки.");
@@ -87,7 +88,8 @@ class HomeController extends BaseController
         $message = 'Спасибо за заказ! В течение дня менеджер свяжется с вами для уточнения деталей.';
 
         if (!$validator->fails()) {
-            DB::insert('insert into anketas (' . implode(",", array(
+
+            $fields = array(
                 'name',
                 'birthdate',
                 'height',
@@ -103,7 +105,9 @@ class HomeController extends BaseController
                 'order_name',
                 'order_email',
                 'order_phone'
-            )) . ') values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', array(
+            );
+
+            $values = array(
                 Input::get('name'),
                 Input::get('birthdate'),
                 Input::get('height'),
@@ -119,15 +123,23 @@ class HomeController extends BaseController
                 Input::get('order_name'),
                 Input::get('order_email'),
                 Input::get('order_phone')
-            ));
+            );
+
+            DB::insert('insert into anketas (' . implode(",", $fields) . ') values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', $values);
 
             $id = DB::getPdo()->lastInsertId();
 
-            Mail::send('emails.adminnotify', array(
-                'email' => " Имя: ".Input::get('order_name')." Email: ".Input::get('order_email').  " Телефон: ".Input::get('order_phone'),
-                'type' => 'Заказ #' . $id
-            ), function ($message) {
-                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Заказ!");
+            $data = array();
+
+            for ($i = 0, $len = count($fields); $i < $len; $i++) {
+                $fld = $fields[$i];
+                $data[$fld] = $values[$i];
+            }
+
+            $data['type'] = 'Анкета';
+
+            Mail::send('emails.adminnotify', $data, function ($message) {
+                $message->from('noreply@lovelyboards.ru', 'LovelyBoards')->to(self::ADMINEMAIL, 'Admin')->subject($_SERVER['HTTP_HOST'] . ": Заказ!")->cc(self::CC_EMAIL);
             });
         } else {
             $status = 'fail';

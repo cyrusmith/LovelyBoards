@@ -17,7 +17,7 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="date">Дата рождения</label>
-                            <input type="date" name="birthdate" class="form-control" id="date"
+                            <input type="text" name="birthdate" class="form-control" id="date"
                                    placeholder="23 мая 2014">
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="height">Рост, см</label>
-                            <input type="number" name="height" class="form-control" id="height">
+                            <input type="text" name="height" class="form-control" id="height">
                         </div>
                     </div>
                     <div class="col-xs-6">
@@ -38,7 +38,7 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label class="control-label" for="tooth">Сколько зубок?</label>
-                            <input type="number" name="tooth" class="form-control" id="tooth">
+                            <input type="text" name="tooth" class="form-control" id="tooth">
                         </div>
                     </div>					
                 </div>
