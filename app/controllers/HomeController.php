@@ -22,8 +22,19 @@ class HomeController extends BaseController
         $message = 'Спасибо за обращение! В течение дня мы вышлем вам бесплатный шаблон.';
 
         if (!$validator->fails()) {
+
             DB::transaction(function () {
                 DB::insert('insert into signups (email, created, form_id) values (?, ?, ?)', array(Input::get('email'), date("Y-m-d H:i:s"), 1));
+            });
+
+            Mail::send('emails.freetpl', array(
+            ), function ($message) {
+                $TPLPATH = base_path("app/storage/downloads/lovelyboards_ru_free_template.pdf");
+                $message
+                    ->from('order@lovelyboards.ru', 'LovelyBoards')
+                    ->to(Input::get('email'), 'Бесплатный шаблон')
+                    ->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.")
+                    ->attach($TPLPATH);
             });
 
             Mail::send('emails.adminnotify', array(
