@@ -42,7 +42,7 @@
                         </div>
                     </div>					
                 </div>
-                <div class="row form-group fav">
+  <!--              <div class="row form-group fav">
                     <div class="col-xs-4">
                         <label class="control-label" for="toy">Любимая игрушка:</label>
                     </div>
@@ -81,9 +81,9 @@
                     <div class="col-xs-8">
                         <input type="text" name="game" class="form-control" id="game" placeholder="">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group">
-                    <label class="control-label" for="favmore">Еще я люблю:</label>
+                    <label class="control-label" for="favmore">Любимые игрушки, еда, словарный запас, любимые книжки, песенки, мультики и т. д. Плюс 17-20 фраз  на темы "я люблю", "я умею". Всё что хотите запомнить о малыше в этом возрасте.</br> В конце напишите предпочитаемый размер постера: 50*75 см (для печати на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>), 50*60 см 50*70 см, или другой.</br> Напишите крайнюю дату готовности постера - день, когда вам нужно получить файл с дизайном</label>
                     <textarea class="form-control" name="more" rows="3" id="favmore"></textarea>
                 </div>
                 <div class="form-group">

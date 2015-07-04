@@ -6,7 +6,7 @@
 
     <meta name="description"
           content="Предлагаем украсить день рождения вашего малыша с помощью стильной грифельной доски. Дизайн, печать, оформление в раму."/>
-    <meta name="keywords" content="грифельный доски, первый день рождения, подарок на один год"/>
+    <meta name="keywords" content="грифельный доски, первый день рождения, подарок на один год, постер достижений"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap.min.css"/>
@@ -200,7 +200,7 @@
 
 </div>
 
-
+<div  class="text-center clearfix"> <h3 class="text-center"><p>Посмотрите ещё образцы постеров в группе Вконтакте:</h3><h3><a href = 'https://vk.com/chalkboard_diz?z=album-68421006_190981523' target="_blank"><br/>Модная Метрика & Постер достижений на 1 годик!</a></h3></p></div>
 <div class="container testimonials">
     <h3 class="text-center">Отзывы</h3>
 
@@ -269,7 +269,7 @@
 
 <div class="container howwework">
 
-    <h2>Как получить доску?</h2>
+    <h2>Как получить постер достижений?</h2>
 
     <div class="row">
         <div class="col-xs-4 step">
@@ -301,25 +301,25 @@
     <table>
         <tr class="titles">
             <th class="opt1">
-                <div>&laquo;Принт-мини&raquo;<br>575 руб.
+                <div>&laquo;Принт-мини&raquo;<br>950 руб.
                 </div>
             </th>
             <th class="opt2">
-                <div>&laquo;Принт-макси&raquo;<br>1 499 руб.</div>
+                <div>&laquo;Принт-макси&raquo;<br>2 499 руб.</div>
             </th>
             <th class="opt3">
                 <div>&laquo;Под ключ&raquo;<br>
-                    4 999 руб.
+                    6 999 руб.
                 </div>
             </th>
         </tr>
         <tr class="descr">
             <td class="opt1">
                 <ul>
-                    <li>Постер на основе <a href="/design">готового дизайна</a></li>
+                    <li>Постер достижений на основе <a href="https://vk.com/album-68421006_190981523" target="_blank">готового дизайна</a></li>
                     <li>Фразы и данные о малыше в выбранном дизайне</li>
                     <li>Количество фраз примерно как на выбранном дизайне</li>
-                    <li>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</li>
+                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см</li>
                     <li class="cta">
                         <button class="order-option" rel="anketa0" opt="tarif1">Заказать</button>
                     </li>
@@ -331,7 +331,7 @@
                     <li>Уникальный дизайн</li>
                     <li>Любое количество фраз</li>
                     <li>Любое тематическое оформление</li>
-                    <li>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</li>
+                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см</li>
                     <li class="cta">
                         <button class="order-option" rel="anketa0" opt="tarif2">Заказать</button>
                     </li>
@@ -341,6 +341,8 @@
             <td class="opt3">
                 <ul>
                     <li>Уникальный дизайн</li>
+					<li>Любое количество фраз</li>
+                    <li>Любое тематическое оформление</li>
                     <li>Печать на холсте</li>
                     <li>Оформление в багет-раму</li>
                     <li>Бесплатная доставка транспортной компанией в любой город РФ</li>
@@ -354,21 +356,22 @@
     </table>
 </div>
 
+<div  class="text-center clearfix"> <h3 class="text-center"><p>Остались вопросы? <a href = 'https://vk.com/bwraduga' target="_blank">Напишите</a> мне вконтакте</h3></p></div>
+
 @include('anketa', array('id' => 'anketa0'))
 
 <div class="container-fluid offer">
     <div class="container">
-        <h3><span class="icon"></span><span class="text">Это новое направление!<br>Поэтому &mdash;</span></h3>
+        <h3><span class="icon"></span><span class="text">Помните!</span></h3>
 
         <p class="ofrtxt">
-            До 31.12.2014<br>
-            всем новым клиентам<br>
-            пожизненная скидка 20%
+            Первый день рождения<br>
+            бывает только раз в жизни!
         </p>
 
         <a href="#anketa" class="cta">
             <span class="text"><span class="wr">Заполните анкету<br>
-и закажите доску</span></span>
+и закажите постер достижений</span></span>
                 <span class="note">Займет
 не более
 5 минут</span>
@@ -558,20 +561,20 @@
         оформление+ Печать на холсте +
         Оформление в раму. В этом варианте также предусмотрена отправка транспортной компанией или почтой России
         в любой город РФ. Менеджер предложит вам оптимальный способ доставки при подтверждении заказа.<br>
-        <i>Вы получаете готовую доску, оформленную в багетную раму и файл PDF пригодный для печати на любом формате.</i>
-        <br>Стоимость 4 999 р.</p>
+        <i>Вы получаете готовый постер, распечатаный на холсте и оформленный в багетную раму и файл PDF пригодный для печати на любом формате.</i>
+        <br>Стоимость 6 999 р.</p>
 
     <p>
 
-        <b>"Принт Mini"</b> : Постер на основе готового дизайна. Выбираете из <a href="#">галереи готовых шаблонов</a>.
-        Данные о вашем ребенке мы помещаем на выбранный постер. Количество фраз примерно как на выбранном дизайне.<br>
+        <b>"Принт Mini"</b> : Постер на основе готового дизайна. Выбираете из <a href="https://vk.com/album-68421006_190981523">галереи готовых шаблонов</a>.
+        Данные о вашем ребенке мы помещаем на выбранный образец постера достижений. Количество фраз примерно как на выбранном дизайне (17-20 фраз).<br>
         <i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость работ
-        по "Принт Mini" - 575 р.</p>
+        по "Принт Mini" - 950 р.</p>
 
     <p>
         <b>"Принт Maxi"</b> : Уникальный дизайн (любое количество фраз, рост, вес, количество зубок, первые слова) +
         Тематическое оформление.
-        <br><i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость 999
+        <br><i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость 2499
         р. </p>
 
 
@@ -594,5 +597,31 @@
 <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 <script src="js/main.js?v=2" type="text/javascript"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter26639517 = new Ya.Metrika({id:26639517,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/26639517" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
