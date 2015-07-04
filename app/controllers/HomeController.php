@@ -23,16 +23,18 @@ class HomeController extends BaseController
 
         if (!$validator->fails()) {
 
-            DB::transaction(function () {
-                DB::insert('insert into signups (email, created, form_id) values (?, ?, ?)', array(Input::get('email'), date("Y-m-d H:i:s"), 1));
+            $toemail = Input::get('email');
+
+            DB::transaction(function () use($toemail) {
+                DB::insert('insert into signups (email, created, form_id) values (?, ?, ?)', array($toemail, date("Y-m-d H:i:s"), 1));
             });
 
             Mail::send('emails.freetpl', array(
-            ), function ($message) {
+            ), function ($message) use($toemail) {
                 $TPLPATH = base_path("app/storage/downloads/lovelyboards_ru_free_template.pdf");
                 $message
                     ->from('order@lovelyboards.ru', 'LovelyBoards')
-                    ->to(Input::get('email'), 'Бесплатный шаблон')
+                    ->to($toemail)
                     ->subject($_SERVER['HTTP_HOST'] . ": Запрос бесплатного шаблона.")
                     ->attach($TPLPATH);
             });
