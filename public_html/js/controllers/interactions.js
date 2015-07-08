@@ -4,7 +4,6 @@ define(['jquery',
     $(function () {
 
         $('.testimonials .scroll').interositeSlider();
-        $('.menu li a').interositePopup();
         $('a.cta').interositeToggleAndScroll();
         $('.getdiscount').interositeToggleAndScroll();
         $('.order-option').interositeToggleAndScroll();

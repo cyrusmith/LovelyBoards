@@ -269,38 +269,9 @@ define(['jquery'], function ($) {
                         nextPage = $pages.eq(pos + 1);
 
                     $(this).css('height', prevPage.height() + 'px');
-
-                    nextPage.css('position', 'absolute');
-                    prevPage.css('position', 'absolute');
-
-                    nextPage.css('left', '3000px');
                     nextPage.show();
-
-                    prevPage.animate({
-                        left: '-3000px'
-                    }, 500, 'swing', function () {
-                        prevPage.css('left', '');
-                        prevPage.css('position', '');
-                        prevPage.hide();
-                    });
-
-                    nextPage.animate({
-                        left: 0
-                    }, 500, 'swing', $.proxy(function () {
-                        nextPage.css('left', '');
-                        nextPage.css('position', '');
-
-                    }, this));
-
-                    $(this).animate({
-                            height: nextPage.height() + 'px'
-                        },
-                        500,
-                        'swing',
-                        $.proxy(function () {
-                            $(this).css('height', '')
-                        }, this)
-                    )
+                    prevPage.hide();
+                    $(this).css('height', '');
 
                     $(this).data('pos', pos + 1)
                 },
@@ -316,36 +287,10 @@ define(['jquery'], function ($) {
 
                     $(this).css('height', prevPage.height() + 'px');
 
-                    nextPage.css('position', 'absolute');
-                    prevPage.css('position', 'absolute');
-
-                    nextPage.css('left', '-3000px');
                     nextPage.show();
+                    prevPage.hide();
 
-                    prevPage.animate({
-                        left: '3000px'
-                    }, 500, 'swing', function () {
-                        prevPage.css('left', '');
-                        prevPage.css('position', '');
-                        prevPage.hide();
-                    });
-
-                    nextPage.animate({
-                        left: 0
-                    }, 500, 'swing', $.proxy(function () {
-                        nextPage.css('left', '');
-                        nextPage.css('position', '');
-                    }, this));
-
-                    $(this).animate({
-                            height: nextPage.height() + 'px'
-                        },
-                        500,
-                        'swing',
-                        $.proxy(function () {
-                            $(this).css('height', '')
-                        }, this)
-                    )
+                    $(this).css('height', '');
 
                     $(this).data('pos', pos - 1)
 

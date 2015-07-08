@@ -1,3 +1,4 @@
+<a name="{{{$id}}}"></a>
 <div class="container line anketa" id="{{{$id}}}">
 
     <form role="form" action="anketa" method="post">

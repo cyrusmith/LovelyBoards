@@ -9,7 +9,7 @@
     <meta name="keywords" content="грифельный доски, первый день рождения, подарок на один год, постер достижений"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css?v=2"/>
+    <link rel="stylesheet" type="text/css" href="/styles.css?v=2"/>
 
 </head>
 <body>
@@ -48,18 +48,17 @@ if (!empty($status)) {
             <ul class="nav navbar-nav menu">
 
                 <li>
-                    <a href="#delivery">Оплата и доставка</a>
+                    <a data-toggle="modal" data-target="#delivery" href="javascript:void(0);">Оплата и доставка</a>
                 </li>
                 <li>
-                    <a href="#garantii">Гарантии</a>
+                    <a data-toggle="modal" data-target="#garantii" href="javascript:void(0);">Гарантии</a>
                 </li>
                 <li>
-                    <a href="#faq">Вопросы и ответы</a>
+                    <a data-toggle="modal" data-target="#faq" href="javascript:void(0);">Вопросы и ответы</a>
                 </li>
                 <li class="hidden-sm">
-                    <a href="#opcii">Опции заказа</a>
+                    <a data-toggle="modal" data-target="#opcii" href="javascript:void(0);">Опции заказа</a>
                 </li>
-
 
             </ul>
 
@@ -87,7 +86,7 @@ if (!empty($status)) {
 
     <p class="facils text-left">
         <span class="glyphicon glyphicon-ok text-success"></span> Дизайн<br/>
-        <span class="glyphicon glyphicon-ok text-success"></span> Печать на холсте оформление в раму<br/>
+        <span class="glyphicon glyphicon-ok text-success"></span> Печать на холсте и оформление в раму<br/>
         <span class="glyphicon glyphicon-ok text-success"></span> Бесплатная доставка по России</p>
 
     <div class="panel panel-primary">
