@@ -1,0 +1,29 @@
+{
+  "name": "public_html",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cyrusmith/LovelyBoards",
+  "authors": [
+    "cyrusmith <info@interosite.ru>"
+  ],
+  "description": "lovelyboards",
+  "main": "main",
+  "keywords": [
+    "website"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "requirejs": "latest",
+    "bootstrap": "3.2.0",
+    "photoswipe": "~4.0",
+    "collagePlus": "git@github.com:ed-lea/jquery-collagePlus.git#0.3.3"
+  }
+}

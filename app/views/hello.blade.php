@@ -9,28 +9,45 @@
     <meta name="keywords" content="грифельный доски, первый день рождения, подарок на один год, постер достижений"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" type="text/css" href="collagePlus/css/transitions.css" media="all"/>
-    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
-          media="screen"/>
-    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
-          media="screen"/>
-
     <link rel="stylesheet" type="text/css" href="styles.css?v=2"/>
 
 </head>
 <body>
 
-<div class="container">
+<?php
+$status = Session::get('status', '');
+$message = Session::get('message', '');
+if (!empty($status)) {
+?>
 
-    <div class="row header">
-        <div class="col-xs-2 logo">
-            <a href="/">LovelyBoards</a>
+<p class="message <?php echo $status == 'ok' ? "bg-success" : "bg-danger" ?>"><?php echo $message?>
+    <button type="button" class="close" onclick="$(this).parent().slideUp();"><span
+                aria-hidden="true">&times;</span><span
+                class="sr-only">Close</span></button>
+</p>
+
+<?php
+}
+?>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">LovelyBoards</a>
         </div>
-        <div class="col-xs-7">
-            <ul class="menu">
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav menu">
+
                 <li>
                     <a href="#delivery">Оплата и доставка</a>
                 </li>
@@ -40,40 +57,25 @@
                 <li>
                     <a href="#faq">Вопросы и ответы</a>
                 </li>
-                <li>
+                <li class="hidden-sm">
                     <a href="#opcii">Опции заказа</a>
                 </li>
+
+
             </ul>
-        </div>
-        <div class="col-xs-3">
-            <address>
+
+            <div class="navbar-right">
                 <p class="phone">+7-908-052-81-87</p>
-            </address>
+            </div>
         </div>
+
     </div>
-
-    <?php
-
-    $status = Session::get('status', '');
-    $message = Session::get('message', '');
-
-    if (!empty($status)) {
-        ?>
-
-        <p class="message <?php echo $status == 'ok' ? "bg-success" : "bg-danger" ?>"><?php echo $message?>
-            <button type="button" class="close" onclick="$(this).parent().slideUp();"><span
-                    aria-hidden="true">&times;</span><span
-                    class="sr-only">Close</span></button>
-        </p>
-
-    <?php
-    }
-    ?>
+</nav>
 
 
+<div class="container-fluid">
     <h1 class="text-center clearfix">Вашему малышу скоро год?<br>
         Сохраните достижения вашего ребенка <br>на стильной грифельной доске</h1>
-
 </div>
 
 <div class="container-fluid descript">
@@ -187,12 +189,12 @@
     <div id="collage" class="row">
         <?php
         for ($i = 1; $i < 18; $i++) {
-            ?>
-            <div class="wrapper" data-caption="">
-                <a rel="gal1" href="images/gallery/<?php echo $i > 9 ? $i : "0" . $i; ?>_lovelyboard.jpg">
-                    <img src="images/gallery/<?php echo $i > 9 ? $i : "0" . $i; ?>_lovelyboard_small.jpg"/>
-                </a>
-            </div>
+        ?>
+        <div class="wrapper" data-caption="">
+            <a rel="gal1" href="images/gallery/<?php echo $i > 9 ? $i : "0" . $i; ?>_lovelyboard.jpg">
+                <img src="images/gallery/<?php echo $i > 9 ? $i : "0" . $i; ?>_lovelyboard_small.jpg"/>
+            </a>
+        </div>
         <?php
         }
         ?>
@@ -200,7 +202,10 @@
 
 </div>
 
-<div  class="text-center clearfix"> <h3 class="text-center"><p>Посмотрите ещё образцы постеров в группе Вконтакте:</h3><h3><a href = 'https://vk.com/chalkboard_diz?z=album-68421006_190981523' target="_blank"><br/>Модная Метрика & Постер достижений на 1 годик!</a></h3></p></div>
+<div class="text-center clearfix">
+    <h3 class="text-center"><p>Посмотрите ещё образцы постеров в группе Вконтакте:</h3>
+    <h3><a href='https://vk.com/chalkboard_diz?z=album-68421006_190981523' target="_blank"><br/>Модная Метрика & Постер
+            достижений на 1 годик!</a></h3></p></div>
 <div class="container testimonials">
     <h3 class="text-center">Отзывы</h3>
 
@@ -316,10 +321,13 @@
         <tr class="descr">
             <td class="opt1">
                 <ul>
-                    <li>Постер достижений на основе <a href="https://vk.com/album-68421006_190981523" target="_blank">готового дизайна</a></li>
+                    <li>Постер достижений на основе <a href="https://vk.com/album-68421006_190981523" target="_blank">готового
+                            дизайна</a></li>
                     <li>Фразы и данные о малыше в выбранном дизайне</li>
                     <li>Количество фраз примерно как на выбранном дизайне</li>
-                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см</li>
+                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать
+                        на <a href='http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см
+                    </li>
                     <li class="cta">
                         <button class="order-option" rel="anketa0" opt="tarif1">Заказать</button>
                     </li>
@@ -331,7 +339,9 @@
                     <li>Уникальный дизайн</li>
                     <li>Любое количество фраз</li>
                     <li>Любое тематическое оформление</li>
-                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см</li>
+                    <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно распечатывать
+                        на <a href='http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер 50*75 см
+                    </li>
                     <li class="cta">
                         <button class="order-option" rel="anketa0" opt="tarif2">Заказать</button>
                     </li>
@@ -341,7 +351,7 @@
             <td class="opt3">
                 <ul>
                     <li>Уникальный дизайн</li>
-					<li>Любое количество фраз</li>
+                    <li>Любое количество фраз</li>
                     <li>Любое тематическое оформление</li>
                     <li>Печать на холсте</li>
                     <li>Оформление в багет-раму</li>
@@ -356,7 +366,10 @@
     </table>
 </div>
 
-<div  class="text-center clearfix"> <h3 class="text-center"><p>Остались вопросы? <a href = 'https://vk.com/bwraduga' target="_blank">Напишите</a> мне вконтакте</h3></p></div>
+<div class="text-center clearfix">
+    <h3 class="text-center"><p>Остались вопросы? <a href='https://vk.com/bwraduga' target="_blank">Напишите</a> мне
+            вконтакте</h3>
+    </p></div>
 
 @include('anketa', array('id' => 'anketa0'))
 
@@ -561,20 +574,24 @@
         оформление+ Печать на холсте +
         Оформление в раму. В этом варианте также предусмотрена отправка транспортной компанией или почтой России
         в любой город РФ. Менеджер предложит вам оптимальный способ доставки при подтверждении заказа.<br>
-        <i>Вы получаете готовый постер, распечатаный на холсте и оформленный в багетную раму и файл PDF пригодный для печати на любом формате.</i>
+        <i>Вы получаете готовый постер, распечатаный на холсте и оформленный в багетную раму и файл PDF пригодный для
+            печати на любом формате.</i>
         <br>Стоимость 6 999 р.</p>
 
     <p>
 
-        <b>"Принт Mini"</b> : Постер на основе готового дизайна. Выбираете из <a href="https://vk.com/album-68421006_190981523">галереи готовых шаблонов</a>.
-        Данные о вашем ребенке мы помещаем на выбранный образец постера достижений. Количество фраз примерно как на выбранном дизайне (17-20 фраз).<br>
+        <b>"Принт Mini"</b> : Постер на основе готового дизайна. Выбираете из <a
+                href="https://vk.com/album-68421006_190981523">галереи готовых шаблонов</a>.
+        Данные о вашем ребенке мы помещаем на выбранный образец постера достижений. Количество фраз примерно как на
+        выбранном дизайне (17-20 фраз).<br>
         <i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость работ
         по "Принт Mini" - 950 р.</p>
 
     <p>
         <b>"Принт Maxi"</b> : Уникальный дизайн (любое количество фраз, рост, вес, количество зубок, первые слова) +
         Тематическое оформление.
-        <br><i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость 2499
+        <br><i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость
+        2499
         р. </p>
 
 
@@ -584,44 +601,48 @@
 
 </div>
 
-<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+@if (Config::get('app.debug'))
+    <script src="/bower_components/requirejs/require.js" data-main="/js/main.js"></script>
+@else
+    <script src="/all.js?v={{Config::get('love.version')}}"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter26639517 = new Ya.Metrika({
+                        id: 26639517,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true
+                    });
+                } catch (e) {
+                }
+            });
 
-<script src="collagePlus/jquery.collagePlus.js"></script>
-<script src="collagePlus/extras/jquery.removeWhitespace.js"></script>
-<script src="collagePlus/extras/jquery.collageCaption.js"></script>
-<script type="text/javascript" src="fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/26639517" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+@endif
 
-<script src="js/main.js?v=2" type="text/javascript"></script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter26639517 = new Ya.Metrika({id:26639517,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true});
-        } catch(e) { }
-    });
+@include('photoswipe')
 
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/26639517" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>

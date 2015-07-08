@@ -1,1 +1,0 @@
-/opt/php4/bin/php
