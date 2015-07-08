@@ -3,9 +3,8 @@
     <form role="form" action="anketa" method="post">
 
         <div class="row horizontalpages">
-            <div class="col-xs-6 col-xs-offset-3">
+            <div class="col-sm-6 col-sm-offset-3">
                 <h3>Укажите данные вашего малыша</h3>
-
 
                 <div class="row">
                     <div class="col-xs-6">
@@ -83,8 +82,9 @@
                     </div>
                 </div> -->
                 <div class="form-group">
-                    <label class="control-label" for="favmore">Любимые игрушки, еда, словарный запас, любимые книжки, песенки, мультики и т. д. Плюс 17-20 фраз  на темы "я люблю", "я умею". Всё что хотите запомнить о малыше в этом возрасте.</br> В конце напишите предпочитаемый размер постера: 50*75 см (для печати на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>), 50*60 см 50*70 см, или другой.</br> Напишите крайнюю дату готовности постера - день, когда вам нужно получить файл с дизайном</label>
+                    <label class="control-label" for="favmore">Дополнительно:</label>
                     <textarea class="form-control" name="more" rows="3" id="favmore"></textarea>
+                    <small class="help-block">Любимые игрушки, еда, словарный запас, любимые книжки, песенки, мультики и т. д. Плюс 17-20 фраз  на темы "я люблю", "я умею". Всё что хотите запомнить о малыше в этом возрасте.</br> В конце напишите предпочитаемый размер постера: 50*75 см (для печати на <a href = 'http://www.netprint.ru/bid/23488'>netprint.ru</a>), 50*60 см 50*70 см, или другой.</br> Напишите крайнюю дату готовности постера - день, когда вам нужно получить файл с дизайном</small>
                 </div>
                 <div class="form-group">
                     <h4>Тариф</h4>
@@ -114,7 +114,7 @@
 
             </div>
 
-            <div class="col-xs-6 col-xs-offset-3">
+            <div class="col-sm-6 col-sm-offset-3">
 
                 <h4>Данные для связи с вами:</h4>
 

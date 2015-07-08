@@ -30,8 +30,7 @@ if (!empty($status)) {
 }
 ?>
 
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
 
         <div class="navbar-header">
@@ -72,13 +71,51 @@ if (!empty($status)) {
     </div>
 </nav>
 
+<div class="container-fluid section1">
+    <p class="text-center">Вашему малышу скоро год?</p>
 
-<div class="container-fluid">
-    <h1 class="text-center clearfix">Вашему малышу скоро год?<br>
-        Сохраните достижения вашего ребенка <br>на стильной грифельной доске</h1>
+    <h1 class="text-center">
+        Сохраните достижения вашего ребенка на стильной грифельной доске</h1>
+
+    <div class="text-center visible-xs-block">
+        <img src="images/descr_img.jpg" class="img-thumbnail"/>
+    </div>
+
 </div>
 
-<div class="container-fluid descript">
+<div class="container-fluid descript-xs visible-xs-block">
+
+    <p class="facils text-left">
+        <span class="glyphicon glyphicon-ok text-success"></span> Дизайн<br/>
+        <span class="glyphicon glyphicon-ok text-success"></span> Печать на холсте оформление в раму<br/>
+        <span class="glyphicon glyphicon-ok text-success"></span> Бесплатная доставка по России</p>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <p class="panel-title"><span class="glyphicon glyphicon-gift"></span> Получите <b>бесплатный шаблон</b> в
+                формате pdf для самостоятельного заполнения:
+            </p>
+        </div>
+
+        <div class="panel-body">
+
+            <form action="/free" role="form" method="post" id="form1">
+                <div class="form-group">
+                    <label class="control-label" for="email1">Ваш email</label>
+                    <input name="email" id="email1" class="form-control" validator="email">
+                </div>
+                <div class="submit text-center">
+                    <button class="btn btn-danger" type="submit">Отправить</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid descript hidden-xs">
 
     <div class="container">
 
@@ -90,8 +127,8 @@ if (!empty($status)) {
             </div>
             <div class="col-xs-8">
                 <h2>
-                    Дизайн, печать на холсте,<br>
-                    оформление в раму,<br>
+                    Дизайн, печать на холсте,<br/>
+                    оформление в раму,<br/>
                     бесплатная доставка по России
                 </h2>
 
@@ -120,9 +157,10 @@ if (!empty($status)) {
     </div>
 </div>
 
+
 <div class="container line">
 
-    <div class="col-xs-offset-2 col-xs-8 about">
+    <div class="col-sm-offset-2 col-sm-8 about">
         <h3>Как украсить первый день рождения: грифельные доски.</h3>
 
         <p>Первый день рождения важный этап в жизни каждой мамы и ее малыша.</p>
@@ -140,11 +178,7 @@ if (!empty($status)) {
                 малыша.</b></p>
 
         <h4>Где купить грифельную доску и мелки?</h4>
-        <!--
-                <noindex>
-                    <p>Если Вам понравилась наша идея оформления... <br><a class="more" href="#more_about">Далее</a></p>
-                </noindex>
-        -->
+
         <div id="more_about">
             <p>Можно
                 пройтись по детским магазинам, и посмотреть что имеется в наличии там. Зачастую несколько вариантов
@@ -180,10 +214,6 @@ if (!empty($status)) {
 
 </div>
 
-<?php
-
-?>
-
 <div class="container gallery">
 
     <div id="collage" class="row">
@@ -202,18 +232,18 @@ if (!empty($status)) {
 
 </div>
 
-<div class="text-center clearfix">
-    <h3 class="text-center"><p>Посмотрите ещё образцы постеров в группе Вконтакте:</h3>
-    <h3><a href='https://vk.com/chalkboard_diz?z=album-68421006_190981523' target="_blank"><br/>Модная Метрика & Постер
-            достижений на 1 годик!</a></h3></p></div>
+<div class="text-center">
+    <h4 class="text-center">Посмотрите ещё образцы постеров в группе ВKонтакте:</h4>
+    <a href='https://vk.com/chalkboard_diz?z=album-68421006_190981523' target="_blank">Модная Метрика & Постер
+        достижений на 1 годик!</a>
+</div>
+
 <div class="container testimonials">
     <h3 class="text-center">Отзывы</h3>
 
-    <ul class="col-xs-offset-2 col-xs-8">
+    <ul class="col-sm-offset-2 col-sm-8">
 
         <li>
-
-
             <div>
                 <img src="images/testimonials/1.jpg"/>
 
@@ -270,25 +300,23 @@ if (!empty($status)) {
     </ul>
 </div>
 
-</div>
-
 <div class="container howwework">
 
     <h2>Как получить постер достижений?</h2>
 
     <div class="row">
-        <div class="col-xs-4 step">
+        <div class="col-sm-4 step">
             <img src="images/icon-anketa.png"/>
 
             <p>Вы заполняете анкету и вносите предоплату</p>
         </div>
-        <div class="col-xs-4 step">
+        <div class="col-sm-4 step">
             <img src="images/icon-design.png"/>
 
             <p>Мы делаем дизайн,печать на холсте,
                 оформление в раму</p>
         </div>
-        <div class="col-xs-4 step">
+        <div class="col-sm-4 step">
             <img src="images/icon-delivery.png"/>
 
             <p>Отправляем готовую доску
@@ -303,7 +331,86 @@ if (!empty($status)) {
     <div class="g2t">
         <p>Какие варианты доступны?</p>
     </div>
-    <table>
+
+    <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        &laquo;Принт-мини&raquo; &mdash; 950 руб.
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <ul>
+                        <li>Постер достижений на основе <a href="https://vk.com/album-68421006_190981523"
+                                                           target="_blank">готового
+                                дизайна</a></li>
+                        <li>Фразы и данные о малыше в выбранном дизайне</li>
+                        <li>Количество фраз примерно как на выбранном дизайне</li>
+                        <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно
+                            распечатывать
+                            на <a href='http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер
+                            50*75 см
+                        </li>
+                    </ul>
+                    <button class="order-option btn btn-danger" rel="anketa0" opt="tarif1">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        &laquo;Принт-макси&raquo; &mdash; 2 499 руб.
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <ul>
+                        <li>Уникальный дизайн</li>
+                        <li>Любое количество фраз</li>
+                        <li>Любое тематическое оформление</li>
+                        <li>Вы получаете файл для печати на любом формате в ближайшей типографии.<br/>Удобно
+                            распечатывать
+                            на <a href='http://www.netprint.ru/bid/23488'>netprint.ru</a>: Печать на холсте, размер
+                            50*75 см
+                        </li>
+                    </ul>
+                    <button class="order-option btn btn-danger" rel="anketa0" opt="tarif2">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        &laquo;Под ключ&raquo; &mdash; 6 999 руб.
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <ul>
+                        <li>Уникальный дизайн</li>
+                        <li>Любое количество фраз</li>
+                        <li>Любое тематическое оформление</li>
+                        <li>Печать на холсте</li>
+                        <li>Оформление в багет-раму</li>
+                        <li>Бесплатная доставка транспортной компанией в любой город РФ</li>
+                    </ul>
+                    <button class="order-option btn btn-danger" rel="anketa0" opt="tarif3">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="hidden-xs">
         <tr class="titles">
             <th class="opt1">
                 <div>&laquo;Принт-мини&raquo;<br>950 руб.
@@ -366,14 +473,12 @@ if (!empty($status)) {
     </table>
 </div>
 
-<div class="text-center clearfix">
-    <h3 class="text-center"><p>Остались вопросы? <a href='https://vk.com/bwraduga' target="_blank">Напишите</a> мне
-            вконтакте</h3>
-    </p></div>
-
 @include('anketa', array('id' => 'anketa0'))
 
-<div class="container-fluid offer">
+<h3 class="text-center">Остались вопросы? <a href='https://vk.com/bwraduga' target="_blank"
+                                             class="btn btn-lg btn-link">Напишите мне ВКонтакте</a></h3>
+
+<div class="container-fluid offer hidden-xs">
     <div class="container">
         <h3><span class="icon"></span><span class="text">Помните!</span></h3>
 
@@ -393,18 +498,36 @@ if (!empty($status)) {
     </div>
 </div>
 
+<div class="container-fluid offer visible-xs">
+    <div class="container">
+        <h3><span class="icon"></span><span class="text">Помните!</span></h3>
+
+        <p class="text-center offersmall">
+            Первый день рождения бывает только раз в жизни!
+        </p>
+
+        <div class="text-center">
+            <a href="#anketa" class="cta btn btn-danger btn-lg">
+                Заполните анкету<br/>
+                и закажите постер достижений
+            </a>
+            <span class="help-block">Займет не более 5 минут</span>
+        </div>
+    </div>
+</div>
+
 @include('anketa', array('id' => 'anketa'))
 
 <div class="container">
     <div class="orgoffer text-center">
-        <img src="images/org_offer.jpg" alt=""/>
+        <img src="images/org_offer.jpg" alt="" style="width:100%; max-width:480px;"/>
     </div>
     <div class="text-center">
         <button type="submit" class="btn btn-danger getdiscount" rel="getdiscform">Получить скидку</button>
     </div>
 
     <div class="row" id="getdiscform">
-        <div class="col-xs-4 col-xs-offset-4">
+        <div class="col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1">
 
             <form role="form" action="discount" method="post">
                 <div class="row">
@@ -443,163 +566,11 @@ if (!empty($status)) {
     </div>
 </div>
 
-<noindex>
-    <div id="delivery">
-
-        <h3>Оплата и доставка</h3>
-
-        <h4>Для заказа "Под ключ"</h4>
-        Доставка осуществляется транспортной компанией либо Почтой России на ваш выбор. Мы доставляем ваш заказ
-        бесплатно.
-
-        <h4>Для заказа "Принт - мини" и "Принт - макси"</h4>
-        Я выполняю для Вас индивидуальный дизайн постера в стиле меловой доски, учитывая все персональные особенности
-        вашего малыша.
-        Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.
-        Файл вы сможете скачать по предоставленной нами ссылке.
-
-        <h4>Оплата</h4>
-        Оплата производится на карту сбербанка. В будущем мы сможем добавить рассчет электронными валютами.
-
-        <!--
-                <h4>Почтой России</h4>
-
-                <p>У почты есть два подходящих вам варианта:</p>
-
-                <h5>Курьерская доставка EMS</h5>
-
-                <p>Данный способ подойдет вам, если вы не хотите самостоятельно ходить в почтовое отделение. Вам привезут товар
-                    и выдадут непосредственно в руки.</p>
-
-                <p>Однако, стоимость будет значительная - 400 - 800 руб. в зависимости от вашего фактического местоположения.
-                    Оплата - наличные курьеру.</p>
-
-                <p>Посылкой (рекомендуемый дешевый вариант). Вы сами забираете посылку с товаром в ближайшем почтовом отделении.
-                    Стоимость будет порядка 50-100 руб. Точную стоимость доставки вы можете узнать на сайте почты России. Также,
-                    при подтверждении заказа оператор назовет вам точную стоимость.
-                    Оплата - наличные при получении заказа на почте. Внимание! В случае оплаты покупки на сайте вы получите
-                    посылку на почте бесплатно!</p>
 
 
-                <p>Возможно, вы предпочтете пользоваться услугами одной из транспортных компаний из тех, с которыми мы
-                    работаем.</p>
+@include('popups')
+@include('photoswipe')
 
-                <h4>Транспортная компания “Деловые линии”</h4>
-
-                <p>Удостоверьтесь, что данная компания отправляет грузы в ваш город\нас. пункт на официальном сайте
-                    http://www.dellin.ru/cities/</p>
-
-                <p>Вы можете либо забрать заказа самостоятельно, либо запросить доставку по вашему адресу:
-                    Забрать самостоятельно - стоимость доставки от нас в ваш город будет порядка 350 руб.
-                    Заказать доставку на дом (произвольный адрес) - стоимость доставки от нашего склада до вашего адреса будет
-                    порядка 650 руб.</p>
-
-                <h4>Порядок оплаты и получения заказа</h4>
-
-                <p>При отправке товара Деловыми линиями или EMS вы вносите 100% предоплату любым удобным вам способом, прежде
-                    чем мы передадим ваш заказ в в службу доставки.</p>
-
-                <p>В случае, если вы вдруг решите, что товар вам не подходит, то мы без вопросов возвращаем вам полную стоимость
-                    товара. В этом случае мы оплачиваете только доставку.</p>
-
-                <p>Вы можете вообще не платить за доставку. Для этого нужно выбрать получение товара в почтовом отделении и
-                    оплатить покупку при оформлении заказа на сайте.</p>
-
-                <p>Если вы предпочтете оплату наличными при получении (наложенный платеж), то стоимость доставки составит
-                    порядка 100 руб. В обоих этих случаях вы имеете право вернуть товар, если по каким либо причинам он вам не
-                    подошел.</p>
-        -->
-    </div>
-</noindex>
-
-<div id="garantii">
-
-    <h3>Гарантии</h3>
-
-    <p>
-        Наша цель - доставить вам множество радостных и светлых минут. </p>
-
-    <p>
-        Если эта цель не достигнута - все остальное неважно. </p>
-
-    <p>
-        Мы гарантируем, что если вы останетесь недовольны результатами нашей работы, то мы без лишних
-        вопросов вернем вам деньги. </p>
-
-    <p>
-        Для этого нужно просто написать нам и объяснить, что именно не понравилось. Это поможет сохранить вам деньги, а
-        нам исправить недочеты в будущем.</p>
-
-    <p>
-        <b>Надеемся, что сможем сделать вас и ваших детей хоть немного счастливее!</b></p>
-
-    </p>
-
-</div>
-
-<div id="faq">
-
-    <h3>Вопросы и ответы</h3>
-
-    <h5>Я организатор дестких праздников. Могу ли получить оптовую скидку?</h5>
-
-    <p>Да, при последующих заказах вы получаете скидку 10%.</p>
-
-    <h5>Могу ли я самостоятельно распечатать доску по вашему дизайну?</h5>
-
-    <p>Да, это возможно. При подтверждении заказа вы согласуете размер постера с менеджером.</p>
-
-    <h5>Какие способы оплаты вы принимаете?</h5>
-
-    <p>В данный момент принимаем только платежи на банковскую карту или наличные курьеру. В дальнейшем можно будет
-        оплатить электронными валютами.</p>
-
-    <h5>Что, если вы не успеете привезти доску в оговоренный срок?</h5>
-
-    <p>В этом случае мы вернем вам все деньги.</p>
-
-    <h5>Что если будут замечены ошибки в информации на доске уже после ее получения?</h5>
-
-    <p>Пришлите нам фото доски и мы вернем вам деньги. Нам важно, чтобы наша работа приносила только радость и
-        счастье.</p>
-
-</div>
-
-<div id="opcii">
-
-    <h3>Подробнее о вариантах заказа</h3>
-
-    <p>
-        <b>"Под ключ"</b> : Уникальный дизайн (любое количество фраз, рост, вес, количество зубок, слова)+ Тематическое
-        оформление+ Печать на холсте +
-        Оформление в раму. В этом варианте также предусмотрена отправка транспортной компанией или почтой России
-        в любой город РФ. Менеджер предложит вам оптимальный способ доставки при подтверждении заказа.<br>
-        <i>Вы получаете готовый постер, распечатаный на холсте и оформленный в багетную раму и файл PDF пригодный для
-            печати на любом формате.</i>
-        <br>Стоимость 6 999 р.</p>
-
-    <p>
-
-        <b>"Принт Mini"</b> : Постер на основе готового дизайна. Выбираете из <a
-                href="https://vk.com/album-68421006_190981523">галереи готовых шаблонов</a>.
-        Данные о вашем ребенке мы помещаем на выбранный образец постера достижений. Количество фраз примерно как на
-        выбранном дизайне (17-20 фраз).<br>
-        <i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость работ
-        по "Принт Mini" - 950 р.</p>
-
-    <p>
-        <b>"Принт Maxi"</b> : Уникальный дизайн (любое количество фраз, рост, вес, количество зубок, первые слова) +
-        Тематическое оформление.
-        <br><i>Вы получаете файл PDF пригодный для печати на любом формате в ближайшей типографии.</i> <br>Стоимость
-        2499
-        р. </p>
-
-
-    <p>
-        <b>Мы работаем чтобы сделать вас и ваших детей счастливыми!</b>
-    </p>
-
-</div>
 
 @if (Config::get('app.debug'))
     <script src="/bower_components/requirejs/require.js" data-main="/js/main.js"></script>
@@ -641,8 +612,6 @@ if (!empty($status)) {
     </noscript>
     <!-- /Yandex.Metrika counter -->
 @endif
-
-@include('photoswipe')
 
 </body>
 </html>

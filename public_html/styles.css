@@ -254,8 +254,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -2978,8 +2978,8 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #e03046;
+  border-color: #d62037;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -2987,8 +2987,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #c01d31;
+  border-color: #a11829;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3010,11 +3010,11 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #e03046;
+  border-color: #d62037;
 }
 .btn-danger .badge {
-  color: #d9534f;
+  color: #e03046;
   background-color: #ffffff;
 }
 .btn-link {
@@ -6392,27 +6392,27 @@ button.close {
   background-image: none;
 }
 .btn-danger {
-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
-  background-image: -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
-  background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #e03046 0%, #b71b2f 100%);
+  background-image: -o-linear-gradient(top, #e03046 0%, #b71b2f 100%);
+  background-image: linear-gradient(to bottom, #e03046 0%, #b71b2f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe03046', endColorstr='#ffb71b2f', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #b92c28;
+  border-color: #ae1a2d;
 }
 .btn-danger:hover,
 .btn-danger:focus {
-  background-color: #c12e2a;
+  background-color: #b71b2f;
   background-position: 0 -15px;
 }
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #c12e2a;
-  border-color: #b92c28;
+  background-color: #b71b2f;
+  border-color: #ae1a2d;
 }
 .btn-danger:disabled,
 .btn-danger[disabled] {
-  background-color: #c12e2a;
+  background-color: #b71b2f;
   background-image: none;
 }
 .thumbnail,
@@ -6873,10 +6873,8 @@ button.close {
     -o-transform: translate(0, 0);
   }
 }
-.has-error {
-  -webkit-animation: shake 400ms 0 ease-in-out;
-  -moz-animation: shake 400ms 0 ease-in-out;
-  -ms-animation: shake 400ms 0 ease-in-out;
+body {
+  padding-top: 70px;
 }
 a {
   text-decoration: underline;
@@ -6885,18 +6883,25 @@ a {
 p a.more {
   float: right;
 }
-h1 {
+.section1 p {
+  font-size: 1.4em;
   color: #e03046;
-  text-shadow: 0 1px 1px #533;
-  white-space: nowrap;
-  font-size: 3em;
+}
+.section1 h1 {
+  color: #e03046;
+  text-shadow: 0 1px 1px #000;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 h4,
 h5 {
   font-weight: bold;
 }
-.container.line {
-  padding: 4em 0;
+.has-error {
+  -webkit-animation: shake 400ms 0 ease-in-out;
+  -moz-animation: shake 400ms 0 ease-in-out;
+  -ms-animation: shake 400ms 0 ease-in-out;
 }
 .navbar .navbar-brand {
   font-family: Verdana, sans-serif;
@@ -6910,6 +6915,9 @@ h5 {
   font-weight: bold;
   font-size: 1.2em;
   padding-top: .85em;
+}
+.descript-xs .facils {
+  padding: 2em 1em;
 }
 .descript {
   height: 484px;
@@ -6927,11 +6935,11 @@ h5 {
   box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .descript h2 {
-  padding-top: 1em;
-  font-size: 42px;
+  font-size: 2.8em;
+  padding-top: .875em;
   color: #fff;
   text-shadow: 0 1px 1px #533;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 .descript .getfree-title {
   color: #FFF;
@@ -6942,6 +6950,8 @@ h5 {
   background: url(images/arr1.png) no-repeat 100% 30%;
 }
 .descript form {
+  position: relative;
+  left: 1.5em;
   width: 334px;
   height: 116px;
   background: url(images/form_bg.png) no-repeat 0 0;
@@ -6963,11 +6973,13 @@ h5 {
 .descript .submit {
   padding-top: 1em;
 }
+.about {
+  padding: 2em 0;
+}
 .about h3 {
   font-size: 1.5em;
   font-weight: bold;
   color: #e03046;
-  text-shadow: 0 1px 1px #000;
 }
 .testimonials {
   padding: 2em 0;
@@ -7025,8 +7037,8 @@ h5 {
   font-weight: bold;
 }
 .offer {
+  padding-bottom: 2em;
   text-align: center;
-  height: 480px;
   background: #cbedf9 url(images/offer-bg.jpg) repeat-x 50% 50%;
 }
 .offer h3 {
@@ -7061,11 +7073,19 @@ h5 {
   color: #c70018;
   text-shadow: 0 1px 1px #999;
 }
+.offer .offersmall {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #c70018;
+  text-shadow: 0 1px 1px #999;
+}
 .offer .cta {
   margin-top: 2em;
   text-align: left;
   display: inline-block;
-  height: 90px;
   background-color: #ff5071;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff5071), to(#ce3043));
   background: -webkit-linear-gradient(top, #ff5071, #ce3043);
@@ -7122,7 +7142,10 @@ h5 {
   background: #e87484;
 }
 .options {
-  padding: 4em 0;
+  padding: 2em 0 0;
+}
+.options .panel-body button {
+  margin-top: 1em;
 }
 .options .g2t {
   text-align: center;
@@ -7225,7 +7248,6 @@ h5 {
   padding: 1.5em 0;
   float: left;
   width: 100%;
-  height: 220px;
   margin-bottom: 0;
   border-bottom: 1px solid #d6d6f4;
   border-left: 1px solid #d6d6f4;
@@ -7250,7 +7272,7 @@ h5 {
   display: none;
 }
 .orgoffer {
-  padding: 1em 0;
+  padding: 4em 0 1em;
 }
 .message {
   width: 600px;
@@ -7276,6 +7298,7 @@ h5 {
 }
 .is-popup {
   display: none;
+  z-index: 2000;
   position: fixed;
   top: 150px;
   left: 0;
@@ -7283,7 +7306,7 @@ h5 {
 }
 .is-popup .is-popup-wrapper {
   position: relative;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   padding: 1em;
   border: 3px solid #8c8c8c;
