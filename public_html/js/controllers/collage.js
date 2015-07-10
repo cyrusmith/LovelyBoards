@@ -23,8 +23,9 @@ define(['jquery',
             resizeTimer = setTimeout(collage, 200);
         });
 
-        setTimeout(collage, 3000);
         $('#collage').collageCaption();
+
+        collage();
     });
 
 });

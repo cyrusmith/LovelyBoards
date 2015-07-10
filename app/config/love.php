@@ -6,5 +6,5 @@
  * Time: 10:14
  */
 return array(
-    'version' => '0.0.2'
+    'version' => '0.0.3'
 );

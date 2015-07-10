@@ -120,7 +120,7 @@ define(['jquery'], function ($) {
                 var dest = $(this).data('scrollDest');
                 dest.slideDown();
                 var pos = dest.offset();
-                $('body').animate({scrollTop: pos.top + 'px'}, 500);
+                $('body').animate({scrollTop: (pos.top - 50) + 'px'}, 500);
             });
 
         });
@@ -273,7 +273,10 @@ define(['jquery'], function ($) {
                     prevPage.hide();
                     $(this).css('height', '');
 
-                    $(this).data('pos', pos + 1)
+                    $(this).data('pos', pos + 1);
+
+                    $('body').animate({scrollTop: ($(this).offset().top - 50) + 'px'}, 500);
+
                 },
                 prev: function () {
                     var pos = $(this).data('pos');
@@ -292,7 +295,9 @@ define(['jquery'], function ($) {
 
                     $(this).css('height', '');
 
-                    $(this).data('pos', pos - 1)
+                    $(this).data('pos', pos - 1);
+
+                    $('body').animate({scrollTop: ($(this).offset().top - 50) + 'px'}, 500);
 
                 }
             };

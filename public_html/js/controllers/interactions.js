@@ -29,6 +29,10 @@ define(['jquery',
             $('input[name="tarif"][value="' + val + '"]').prop('checked', true);
         });
 
+        $('.navbar-nav.menu a').click(function() {
+            $(".navbar-collapse").collapse('hide');
+        });
+
     });
 
 });

@@ -21,6 +21,9 @@
 @navbar-default-toggle-icon-bar-bg: #FFF;
 @navbar-default-toggle-hover-bg: lighten(@mb-red, 10%);
 
+@panel-danger-heading-bg: lighten(@mb-red, 10%);
+@panel-danger-text: #FFF;
+
 body {
   padding-top: 70px;
 }
@@ -47,6 +50,17 @@ p {
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 1em;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .section1 {
+    p {
+      font-size: 1.8em;
+    }
+    h1 {
+      font-size: 3em;
+    }
   }
 }
 
@@ -81,6 +95,17 @@ h4, h5 {
     padding: 2em 1em;
   }
 
+  .panel-danger {
+    .panel-heading {
+      background-color: @mb-red;
+    }
+  }
+
+}
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
 }
 
 .descript {
@@ -121,6 +146,7 @@ h4, h5 {
 
   form {
     position: relative;
+    margin-top: 3em;
     left: 1.5em;
     width: 334px;
     height: 116px;
@@ -300,11 +326,15 @@ h4, h5 {
     }
 
   }
+
+  &.visible-xs {
+    .cta {
+      text-align: center;
+    }
+  }
 }
 
 .options {
-
-  padding: 2em 0 0;
 
   .panel-body {
     button {
@@ -470,7 +500,7 @@ h4, h5 {
   vertical-align: bottom;
 
   /* hide the images until the plugin has run. the plugin will reveal the images*/
-  opacity: 0;
+  //opacity: 0;
 
 }
 
